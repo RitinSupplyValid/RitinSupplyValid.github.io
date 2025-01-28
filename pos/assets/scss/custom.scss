@@ -2,7 +2,7 @@
 
 $backgroundlight:#f8f9fa;
 $blur_background_color:#fffc;
-$orangered_color : #ff9f43 ;
+$orangered_color : #2D68FF;
 $white_color :  white;
 $red_color : #FD2F2E;
 $text_color :#516a7f;
@@ -11,7 +11,7 @@ $add_component_buttoncolor:#092c4c;
 $placeholder_color:#9ba9c0;
 $cancel_button_color:#67748e;
 $cancel_button_color_hover:#424B52;
-$submit_button_color_hover:#FF8510;
+$submit_button_color_hover:#2D68FF;
 $black:black;
 $dark_text:#97a2d2;
 
@@ -27,18 +27,18 @@ $dark_shadow_color: rgb(68 67 67 / 73%);
 $sale_card_back:#80808094;
 
 
-
-
-
-
-
-
-
 $lightgrey:#e9ebed;
-$activeMenuside:#fe9f4314;
+$activeMenuside:#2d68ff0d;
 $black:black;
 $card_border:#dbe0e6;
 $selectedButton:#2467a5;
+
+// Sales/Receipt receipt popup customer details background color
+$receiptPopup : #FAFAFA;
+$backPopupDark:rgb(255 255 255 / 24%);
+$backPopupLight:#00000036;
+$greytext:#a7a7a7;
+
 
 
 $themes: (
@@ -52,7 +52,11 @@ $themes: (
     tabletext:$black,
     accordianheader:$add_component_buttoncolor,
     border:$card_border,
-    cardbackground:$white_color
+    cardbackground:$white_color,
+    popupheader:$receiptPopup,
+    popupheadingtext:$black,
+    popupback:$backPopupLight,
+    cardText:$greytext
 
   ),
   dark-theme: (
@@ -65,9 +69,13 @@ $themes: (
     tabletext:$dark_text,
     accordianheader:$dark_text,
     border:$dark_text,
-    cardbackground:$dark_theme_color
-
-
+    cardbackground:$dark_theme_color,
+    popupheader:$orangered_color,
+    popupheadingtext:$white_color,
+    popupback:$backPopupDark,
+    cardText:$white_color
+ 
+    
   ),
 );
 
